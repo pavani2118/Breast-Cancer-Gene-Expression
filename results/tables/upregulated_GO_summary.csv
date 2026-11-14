@@ -1,0 +1,178 @@
+"ID","Description","GeneRatio","Count","p.adjust"
+"GO:0000070","mitotic sister chromatid segregation","63/1846",63,7.52911739524372e-11
+"GO:0098813","nuclear chromosome segregation","80/1846",80,9.24226418551936e-10
+"GO:0000819","sister chromatid segregation","68/1846",68,9.24226418551936e-10
+"GO:0140014","mitotic nuclear division","73/1846",73,2.71630713874387e-09
+"GO:0007059","chromosome segregation","96/1846",96,3.22764035010586e-09
+"GO:0000280","nuclear division","93/1846",93,2.53346509623045e-08
+"GO:0048285","organelle fission","99/1846",99,7.31361440737242e-08
+"GO:1902850","microtubule cytoskeleton organization involved in mitosis","46/1846",46,8.08397656387308e-07
+"GO:0007051","spindle organization","52/1846",52,1.02465173471254e-06
+"GO:0007052","mitotic spindle organization","40/1846",40,2.20908385119443e-06
+"GO:0050000","chromosome localization","36/1846",36,9.92833730201678e-06
+"GO:0051310","metaphase chromosome alignment","33/1846",33,1.22384672414074e-05
+"GO:0051306","mitotic sister chromatid separation","26/1846",26,1.29581983829143e-05
+"GO:0000075","cell cycle checkpoint signaling","49/1846",49,1.32248412748579e-05
+"GO:1905818","regulation of chromosome separation","28/1846",28,1.92241483374045e-05
+"GO:0010965","regulation of mitotic sister chromatid separation","25/1846",25,2.39529798321236e-05
+"GO:0051304","chromosome separation","29/1846",29,2.39529798321236e-05
+"GO:0033047","regulation of mitotic sister chromatid segregation","24/1846",24,2.66562079921702e-05
+"GO:0010948","negative regulation of cell cycle process","63/1846",63,5.62575305756006e-05
+"GO:0033044","regulation of chromosome organization","56/1846",56,6.19713371008311e-05
+"GO:0009148","pyrimidine nucleoside triphosphate biosynthetic process","11/1846",11,8.15841482318185e-05
+"GO:0045787","positive regulation of cell cycle","63/1846",63,8.20912458631261e-05
+"GO:0140694","membraneless organelle assembly","82/1846",82,8.52565132016154e-05
+"GO:1901988","negative regulation of cell cycle phase transition","56/1846",56,8.52565132016154e-05
+"GO:0007094","mitotic spindle assembly checkpoint signaling","21/1846",21,8.52565132016154e-05
+"GO:0071173","spindle assembly checkpoint signaling","21/1846",21,8.52565132016154e-05
+"GO:0071174","mitotic spindle checkpoint signaling","21/1846",21,8.52565132016154e-05
+"GO:0090068","positive regulation of cell cycle process","53/1846",53,0.000109114580424954
+"GO:0031577","spindle checkpoint signaling","21/1846",21,0.000112278241114919
+"GO:0007093","mitotic cell cycle checkpoint signaling","37/1846",37,0.000130285892018044
+"GO:0045786","negative regulation of cell cycle","72/1846",72,0.000130285892018044
+"GO:0033046","negative regulation of sister chromatid segregation","21/1846",21,0.000130285892018044
+"GO:0033048","negative regulation of mitotic sister chromatid segregation","21/1846",21,0.000130285892018044
+"GO:0045841","negative regulation of mitotic metaphase/anaphase transition","21/1846",21,0.000130285892018044
+"GO:2000816","negative regulation of mitotic sister chromatid separation","21/1846",21,0.000130285892018044
+"GO:0009147","pyrimidine nucleoside triphosphate metabolic process","12/1846",12,0.000180636301919616
+"GO:0033045","regulation of sister chromatid segregation","32/1846",32,0.000182977208269805
+"GO:0008608","attachment of spindle microtubules to kinetochore","20/1846",20,0.000203472756424477
+"GO:1902100","negative regulation of metaphase/anaphase transition of cell cycle","21/1846",21,0.000217369908715953
+"GO:1905819","negative regulation of chromosome separation","21/1846",21,0.000217369908715953
+"GO:0051983","regulation of chromosome segregation","36/1846",36,0.000237164395489651
+"GO:0051985","negative regulation of chromosome segregation","21/1846",21,0.000282080938430552
+"GO:0051988","regulation of attachment of spindle microtubules to kinetochore","12/1846",12,0.000283409188811398
+"GO:0007088","regulation of mitotic nuclear division","32/1846",32,0.000347868341235762
+"GO:0045839","negative regulation of mitotic nuclear division","21/1846",21,0.000634164990152136
+"GO:0006260","DNA replication","61/1846",61,0.000760455060824047
+"GO:1901987","regulation of cell cycle phase transition","79/1846",79,0.000839071051233951
+"GO:0016032","viral process","70/1846",70,0.000839071051233951
+"GO:0051783","regulation of nuclear division","33/1846",33,0.00101902573579633
+"GO:0051231","spindle elongation","8/1846",8,0.00118806880163755
+"GO:0007091","metaphase/anaphase transition of mitotic cell cycle","28/1846",28,0.00121079296383034
+"GO:0090307","mitotic spindle assembly","22/1846",22,0.00121079296383034
+"GO:0008380","RNA splicing","82/1846",82,0.00121428852951884
+"GO:0007264","small GTPase-mediated signal transduction","86/1846",86,0.00154417416509553
+"GO:0030071","regulation of mitotic metaphase/anaphase transition","27/1846",27,0.00154417416509553
+"GO:0051225","spindle assembly","31/1846",31,0.00195988851064572
+"GO:0044784","metaphase/anaphase transition of cell cycle","28/1846",28,0.00196470385001284
+"GO:0051784","negative regulation of nuclear division","21/1846",21,0.00233047435889835
+"GO:0045930","negative regulation of mitotic cell cycle","46/1846",46,0.00233047435889835
+"GO:1902099","regulation of metaphase/anaphase transition of cell cycle","27/1846",27,0.00249377899474582
+"GO:2001251","negative regulation of chromosome organization","27/1846",27,0.00249377899474582
+"GO:0016331","morphogenesis of embryonic epithelium","19/1846",19,0.00300385774216522
+"GO:0043484","regulation of RNA splicing","41/1846",41,0.00301253367016734
+"GO:0007098","centrosome cycle","33/1846",33,0.00398498842978975
+"GO:0051056","regulation of small GTPase mediated signal transduction","58/1846",58,0.00425551340672726
+"GO:0009209","pyrimidine ribonucleoside triphosphate biosynthetic process","8/1846",8,0.00442149239143081
+"GO:0000022","mitotic spindle elongation","7/1846",7,0.00524802297376773
+"GO:0044786","cell cycle DNA replication","14/1846",14,0.00537871500094101
+"GO:0007346","regulation of mitotic cell cycle","80/1846",80,0.00554781460544674
+"GO:0000910","cytokinesis","40/1846",40,0.00605892597604583
+"GO:0006271","DNA strand elongation involved in DNA replication","8/1846",8,0.00792739001919387
+"GO:0045216","cell-cell junction organization","39/1846",39,0.00891203875581747
+"GO:0009211","pyrimidine deoxyribonucleoside triphosphate metabolic process","5/1846",5,0.00933871448590764
+"GO:0051656","establishment of organelle localization","66/1846",66,0.00935596724475053
+"GO:0001838","embryonic epithelial tube formation","16/1846",16,0.00952370862107491
+"GO:0045197","establishment or maintenance of epithelial cell apical/basal polarity","12/1846",12,0.0100347695409111
+"GO:0051052","regulation of DNA metabolic process","81/1846",81,0.0103147178399829
+"GO:0010669","epithelial structure maintenance","13/1846",13,0.0109394079566381
+"GO:0006913","nucleocytoplasmic transport","54/1846",54,0.0109394079566381
+"GO:0051169","nuclear transport","54/1846",54,0.0109394079566381
+"GO:0006261","DNA-templated DNA replication","35/1846",35,0.0119536757665476
+"GO:0000281","mitotic cytokinesis","25/1846",25,0.0119536757665476
+"GO:0006221","pyrimidine nucleotide biosynthetic process","12/1846",12,0.0129533773486226
+"GO:0006275","regulation of DNA replication","28/1846",28,0.0137927391735784
+"GO:0007173","epidermal growth factor receptor signaling pathway","28/1846",28,0.0137927391735784
+"GO:0000381","regulation of alternative mRNA splicing, via spliceosome","19/1846",19,0.0137927391735784
+"GO:0031023","microtubule organizing center organization","33/1846",33,0.0137927391735784
+"GO:0006241","CTP biosynthetic process","7/1846",7,0.0166976127522551
+"GO:1903490","positive regulation of mitotic cytokinesis","7/1846",7,0.0166976127522551
+"GO:0050684","regulation of mRNA processing","30/1846",30,0.0167400547896321
+"GO:0001837","epithelial to mesenchymal transition","33/1846",33,0.0170545577414081
+"GO:0006397","mRNA processing","81/1846",81,0.0172839571677406
+"GO:0090329","regulation of DNA-templated DNA replication","14/1846",14,0.0173204885515609
+"GO:0000377","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile","57/1846",57,0.0175629254815811
+"GO:0000398","mRNA splicing, via spliceosome","57/1846",57,0.0175629254815811
+"GO:0006302","double-strand break repair","57/1846",57,0.0175629254815811
+"GO:0009208","pyrimidine ribonucleoside triphosphate metabolic process","8/1846",8,0.0177680153784885
+"GO:0051383","kinetochore organization","11/1846",11,0.0188551452222523
+"GO:0030879","mammary gland development","18/1846",18,0.0197013427122137
+"GO:0045176","apical protein localization","6/1846",6,0.0197013427122137
+"GO:0051256","mitotic spindle midzone assembly","6/1846",6,0.0197013427122137
+"GO:0050790","regulation of catalytic activity","82/1846",82,0.0197626278881733
+"GO:0033260","nuclear DNA replication","12/1846",12,0.0197626278881733
+"GO:0086042","cardiac muscle cell-cardiac muscle cell adhesion","5/1846",5,0.0205842098461463
+"GO:0048024","regulation of mRNA splicing, via spliceosome","26/1846",26,0.0205842098461463
+"GO:0045814","negative regulation of gene expression, epigenetic","44/1846",44,0.0207323645266135
+"GO:0000375","RNA splicing, via transesterification reactions","57/1846",57,0.0219798858869026
+"GO:0061640","cytoskeleton-dependent cytokinesis","28/1846",28,0.0221648604505525
+"GO:0000380","alternative mRNA splicing, via spliceosome","21/1846",21,0.0221648604505525
+"GO:0019058","viral life cycle","51/1846",51,0.0226239944804027
+"GO:1903900","regulation of viral life cycle","25/1846",25,0.0228033772648552
+"GO:0042770","signal transduction in response to DNA damage","37/1846",37,0.0228671975531996
+"GO:0044771","meiotic cell cycle phase transition","7/1846",7,0.0235118997549734
+"GO:0045064","T-helper 2 cell differentiation","7/1846",7,0.0235118997549734
+"GO:0035088","establishment or maintenance of apical/basal cell polarity","12/1846",12,0.023597131251083
+"GO:0061245","establishment or maintenance of bipolar cell polarity","12/1846",12,0.023597131251083
+"GO:0006310","DNA recombination","58/1846",58,0.023597131251083
+"GO:0031573","mitotic intra-S DNA damage checkpoint signaling","8/1846",8,0.0236759277929847
+"GO:1901991","negative regulation of mitotic cell cycle phase transition","35/1846",35,0.0241865144639212
+"GO:0043588","skin development","40/1846",40,0.0241865144639212
+"GO:0006656","phosphatidylcholine biosynthetic process","10/1846",10,0.0262964966130797
+"GO:0031570","DNA integrity checkpoint signaling","27/1846",27,0.026576675867485
+"GO:0051298","centrosome duplication","20/1846",20,0.0268442379667887
+"GO:0051302","regulation of cell division","36/1846",36,0.0273456852894724
+"GO:0090224","regulation of spindle organization","14/1846",14,0.0274659830711832
+"GO:0046822","regulation of nucleocytoplasmic transport","23/1846",23,0.0274659830711832
+"GO:0031507","heterochromatin formation","39/1846",39,0.029804163896206
+"GO:0040029","epigenetic regulation of gene expression","56/1846",56,0.029804163896206
+"GO:0044772","mitotic cell cycle phase transition","68/1846",68,0.0302487737862446
+"GO:0006220","pyrimidine nucleotide metabolic process","15/1846",15,0.0310569238655759
+"GO:0051338","regulation of transferase activity","50/1846",50,0.0316357660881668
+"GO:0034329","cell junction assembly","78/1846",78,0.0318089591784426
+"GO:0098876","vesicle-mediated transport to the plasma membrane","34/1846",34,0.0321845614385455
+"GO:0048598","embryonic morphogenesis","59/1846",59,0.0323766740581442
+"GO:0000725","recombinational repair","37/1846",37,0.0323766740581442
+"GO:0002009","morphogenesis of an epithelium","54/1846",54,0.032612801925778
+"GO:0034501","protein localization to kinetochore","7/1846",7,0.032612801925778
+"GO:0046036","CTP metabolic process","7/1846",7,0.032612801925778
+"GO:0051299","centrosome separation","7/1846",7,0.032612801925778
+"GO:0002385","mucosal immune response","13/1846",13,0.0327014552615982
+"GO:0060236","regulation of mitotic spindle organization","13/1846",13,0.0327014552615982
+"GO:0000724","double-strand break repair via homologous recombination","36/1846",36,0.0327014552615982
+"GO:0032465","regulation of cytokinesis","22/1846",22,0.0327014552615982
+"GO:0001843","neural tube closure","11/1846",11,0.0327014552615982
+"GO:0060606","tube closure","11/1846",11,0.0327014552615982
+"GO:0007080","mitotic metaphase chromosome alignment","17/1846",17,0.0335722242844685
+"GO:0035563","positive regulation of chromatin binding","4/1846",4,0.0339342664126931
+"GO:0046967","cytosol to endoplasmic reticulum transport","4/1846",4,0.0339342664126931
+"GO:0009221","pyrimidine deoxyribonucleotide biosynthetic process","5/1846",5,0.0348041220640117
+"GO:0071139","resolution of DNA recombination intermediates","5/1846",5,0.0348041220640117
+"GO:0070828","heterochromatin organization","40/1846",40,0.0348662035149282
+"GO:0046599","regulation of centriole replication","9/1846",9,0.0358887294006672
+"GO:0150105","protein localization to cell-cell junction","9/1846",9,0.0358887294006672
+"GO:0051382","kinetochore assembly","10/1846",10,0.0396394929142527
+"GO:0048729","tissue morphogenesis","65/1846",65,0.0398850100127606
+"GO:1990778","protein localization to cell periphery","58/1846",58,0.040709671707672
+"GO:0007043","cell-cell junction assembly","29/1846",29,0.040709671707672
+"GO:0003382","epithelial cell morphogenesis","8/1846",8,0.0410436779474254
+"GO:0046112","nucleobase biosynthetic process","8/1846",8,0.0410436779474254
+"GO:0035567","non-canonical Wnt signaling pathway","16/1846",16,0.0418051870555572
+"GO:0050792","regulation of viral process","28/1846",28,0.0418051870555572
+"GO:0000077","DNA damage checkpoint signaling","24/1846",24,0.0430224727523674
+"GO:0120193","tight junction organization","17/1846",17,0.0430224727523674
+"GO:0000727","double-strand break repair via break-induced replication","6/1846",6,0.0430224727523674
+"GO:0051255","spindle midzone assembly","6/1846",6,0.0430224727523674
+"GO:0098911","regulation of ventricular cardiac muscle cell action potential","6/1846",6,0.0430224727523674
+"GO:0038127","ERBB signaling pathway","29/1846",29,0.0430224727523674
+"GO:1902969","mitotic DNA replication","7/1846",7,0.0430224727523674
+"GO:1903083","protein localization to condensed chromosome","7/1846",7,0.0430224727523674
+"GO:2001252","positive regulation of chromosome organization","22/1846",22,0.0433524233826849
+"GO:0030512","negative regulation of transforming growth factor beta receptor signaling pathway","20/1846",20,0.0439977865381109
+"GO:0048762","mesenchymal cell differentiation","40/1846",40,0.0445468587114544
+"GO:0072175","epithelial tube formation","16/1846",16,0.0468491167956203
+"GO:0014020","primary neural tube formation","11/1846",11,0.0474106705149069
+"GO:0007163","establishment or maintenance of cell polarity","35/1846",35,0.0477340281022549
+"GO:0071897","DNA biosynthetic process","30/1846",30,0.0484001958723019
+"GO:0048732","gland development","42/1846",42,0.0484095403005377
