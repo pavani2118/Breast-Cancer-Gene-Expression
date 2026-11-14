@@ -1,0 +1,6 @@
+data/
+*.RData
+*.rds
+.Rhistory
+.Rproj.user/
+.RData
