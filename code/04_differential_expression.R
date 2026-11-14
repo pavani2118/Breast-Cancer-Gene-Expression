@@ -18,11 +18,17 @@ library(hgu133plus2.db)
 
 # 2. Create Output Folders
 
-dir.create("results/figures", recursive = TRUE,
-           showWarnings = FALSE)
+dir.create(
+  "results/figures",
+  recursive = TRUE,
+  showWarnings = FALSE
+)
 
-dir.create("results/tables", recursive = TRUE,
-           showWarnings = FALSE)
+dir.create(
+  "results/tables",
+  recursive = TRUE,
+  showWarnings = FALSE
+)
 
 
 # 3. Load Expression Data and Sample Information
@@ -37,6 +43,7 @@ sample_info <- read.csv(
 )
 
 # Match sample information to expression columns
+
 sample_info <- sample_info[
   match(colnames(expr), sample_info$Sample_ID),
 ]
@@ -55,7 +62,9 @@ if (any(is.na(group))) {
 }
 
 cat("Expression data loaded successfully!\n")
+
 cat("Total samples:", ncol(expr), "\n")
+
 print(table(group))
 
 
@@ -135,6 +144,7 @@ significant_genes <- results[
 cat("\nDifferential expression analysis completed!\n")
 
 cat("Total probes:", nrow(results), "\n")
+
 cat("Significant probes:", nrow(significant_genes), "\n")
 
 
@@ -189,7 +199,10 @@ volcano_plot <- ggplot(
     color = Significance
   )
 ) +
-  geom_point(alpha = 0.6, size = 1.2) +
+  geom_point(
+    alpha = 0.6,
+    size = 1.2
+  ) +
   geom_vline(
     xintercept = c(-1, 1),
     linetype = "dashed"
@@ -221,15 +234,23 @@ ggsave(
   dpi = 300
 )
 
+cat("Volcano plot saved successfully!\n")
+
 
 # 13. Create Heatmap of Top 30 Significant Probes
 
+cat("\nCreating heatmap...\n")
+
 if (nrow(significant_genes) >= 2) {
+  
+  # Select top 30 significant probes
   
   top_genes <- head(
     significant_genes,
     30
   )
+  
+  # Extract expression values
   
   heatmap_matrix <- expr[
     top_genes$Probe_ID,
@@ -238,12 +259,16 @@ if (nrow(significant_genes) >= 2) {
   ]
   
   # Row-wise scaling
+  
   heatmap_matrix <- t(
     scale(t(heatmap_matrix))
   )
   
-  # Replace missing values if any
+  # Replace missing and infinite values
+  
   heatmap_matrix[!is.finite(heatmap_matrix)] <- 0
+  
+  # Create sample annotation
   
   annotation_col <- data.frame(
     Group = group
@@ -251,29 +276,52 @@ if (nrow(significant_genes) >= 2) {
   
   rownames(annotation_col) <- colnames(expr)
   
-  png(
-    "results/figures/top_genes_heatmap.png",
-    width = 1400,
-    height = 1200,
-    res = 150
-  )
+  # Save heatmap directly as PNG
   
   pheatmap(
     heatmap_matrix,
     annotation_col = annotation_col,
     show_colnames = FALSE,
     show_rownames = TRUE,
-    main = "Top Differentially Expressed Probes"
+    main = "Top 30 Differentially Expressed Probes",
+    fontsize = 9,
+    border_color = NA,
+    filename = "results/figures/top_genes_heatmap.png",
+    width = 10,
+    height = 8
   )
   
-  dev.off()
+  cat("Heatmap saved successfully!\n")
   
 } else {
+  
   cat("Not enough significant probes for heatmap.\n")
+  
 }
 
 
-# 14. Display Top Results
+# 14. Check Generated Heatmap
+
+heatmap_file <- "results/figures/top_genes_heatmap.png"
+
+if (file.exists(heatmap_file)) {
+  
+  cat("Heatmap file exists!\n")
+  
+  cat(
+    "File size:",
+    file.info(heatmap_file)$size,
+    "bytes\n"
+  )
+  
+} else {
+  
+  cat("ERROR: Heatmap file was not created!\n")
+  
+}
+
+
+# 15. Display Top Results
 
 cat("\nTop 10 Differentially Expressed Probes:\n")
 
@@ -294,14 +342,29 @@ print(
 )
 
 
-# 15. Final Summary
+# 16. Final Summary
 
 cat("\n====================================\n")
+
 cat("DIFFERENTIAL EXPRESSION COMPLETED!\n")
+
 cat("====================================\n")
 
 cat("Total probes:", nrow(results), "\n")
+
 cat("Significant probes:", nrow(significant_genes), "\n")
+
+cat(
+  "Upregulated probes:",
+  sum(significant_genes$logFC > 0),
+  "\n"
+)
+
+cat(
+  "Downregulated probes:",
+  sum(significant_genes$logFC < 0),
+  "\n"
+)
 
 cat("\nGenerated files:\n")
 
@@ -311,3 +374,6 @@ print(
     recursive = TRUE
   )
 )
+
+cat("\nAnalysis completed successfully!\n")
+
