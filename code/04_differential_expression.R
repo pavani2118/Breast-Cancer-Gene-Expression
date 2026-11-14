@@ -168,6 +168,8 @@ write.csv(
 
 # 12. Create Volcano Plot
 
+cat("\nCreating volcano plot...\n")
+
 results$Significance <- "Not Significant"
 
 results$Significance[
@@ -214,14 +216,16 @@ volcano_plot <- ggplot(
   labs(
     title = "Volcano Plot: Cancer vs Normal",
     x = "Log2 Fold Change",
-    y = "-Log10 Adjusted P-value"
+    y = "-Log10 Adjusted P-value",
+    color = "Expression Status"
   ) +
   theme_minimal() +
   theme(
     plot.title = element_text(
       hjust = 0.5,
       face = "bold"
-    )
+    ),
+    legend.position = "right"
   )
 
 print(volcano_plot)
@@ -237,24 +241,28 @@ ggsave(
 cat("Volcano plot saved successfully!\n")
 
 
-# 13. Create Heatmap of Top 30 Significant Probes
+# 13. Create Improved Heatmap
 
-cat("\nCreating heatmap...\n")
+cat("\nCreating improved heatmap...\n")
 
 if (nrow(significant_genes) >= 2) {
   
-  # Select top 30 significant probes
+  # Select top 20 significant probes
   
   top_genes <- head(
     significant_genes,
-    30
+    20
   )
+  
+  # Arrange samples by group
+  
+  sample_order <- order(group)
   
   # Extract expression values
   
   heatmap_matrix <- expr[
     top_genes$Probe_ID,
-    ,
+    sample_order,
     drop = FALSE
   ]
   
@@ -268,30 +276,48 @@ if (nrow(significant_genes) >= 2) {
   
   heatmap_matrix[!is.finite(heatmap_matrix)] <- 0
   
+  # Use gene symbols as row names
+  
+  gene_labels <- top_genes$Gene_Symbol
+  
+  missing_labels <- is.na(gene_labels) |
+    gene_labels == ""
+  
+  gene_labels[missing_labels] <-
+    top_genes$Probe_ID[missing_labels]
+  
+  rownames(heatmap_matrix) <- make.unique(
+    gene_labels
+  )
+  
   # Create sample annotation
   
   annotation_col <- data.frame(
-    Group = group
+    Group = group[sample_order]
   )
   
-  rownames(annotation_col) <- colnames(expr)
+  rownames(annotation_col) <- colnames(expr)[sample_order]
   
-  # Save heatmap directly as PNG
+  # Generate and save heatmap
   
   pheatmap(
     heatmap_matrix,
     annotation_col = annotation_col,
+    cluster_rows = TRUE,
+    cluster_cols = FALSE,
     show_colnames = FALSE,
     show_rownames = TRUE,
-    main = "Top 30 Differentially Expressed Probes",
-    fontsize = 9,
+    main = "Top 20 Differentially Expressed Probes",
+    fontsize = 10,
+    fontsize_row = 9,
     border_color = NA,
+    angle_col = 45,
     filename = "results/figures/top_genes_heatmap.png",
-    width = 10,
-    height = 8
+    width = 16,
+    height = 9
   )
   
-  cat("Heatmap saved successfully!\n")
+  cat("Improved heatmap saved successfully!\n")
   
 } else {
   
@@ -376,4 +402,3 @@ print(
 )
 
 cat("\nAnalysis completed successfully!\n")
-
